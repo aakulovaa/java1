@@ -55,15 +55,7 @@ public class Container {
         int[] longerArray = new int[arrayForContainer.length + 1];
         for(int i = 0; i<longerArray.length - 1; i++)
         {
-            if(i == index)
-            {
-                longerArray[i] = element;
-            }
-            else{
-                longerArray[i] = arrayForContainer[i];
-                containerSize++;
-            }
-
+            longerArray[i] = i == index ? element : arrayForContainer[i];
         }
         arrayForContainer = longerArray;
     }
