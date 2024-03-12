@@ -44,4 +44,28 @@ public class Container {
         }
         arrayForContainer = longerArray;
     }
+
+    public int removeElementForIndex(int index)
+    {
+        int removedElement = getElement(index);
+        int[] shorterArray = new int[arrayForContainer.length - 1];
+        int newIndex;
+        if (index >= 0 && index < arrayForContainer.length) {
+            for (int i = 0; i < shorterArray.length; i++) {
+                if (i != index) {
+                    if (i<index)
+                    {
+                        newIndex = i;
+                    }
+                    else {
+                        newIndex = i-1;
+                    }
+                    shorterArray[newIndex] = arrayForContainer[i];
+                }
+            }
+
+            arrayForContainer = shorterArray;
+        }
+        return removedElement;
+    }
 }

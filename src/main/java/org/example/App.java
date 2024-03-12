@@ -11,6 +11,7 @@ public class App
         container.addElementForIndex(3,5);
         container.addElementForIndex(4,9);
         container.addElementForIndex(5,8);
+        System.out.println(container.removeElementForIndex(0));
         System.out.println(container.getElement(0));
         System.out.println(container.getElement(1));
         System.out.println(container.getElement(2));
