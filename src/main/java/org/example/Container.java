@@ -22,4 +22,8 @@ public class Container {
 
         containerSize++;
     }
+
+    public int getElement(int index) {
+        return arrayForContainer[index];
+    }
 }
