@@ -26,4 +26,22 @@ public class Container {
     public int getElement(int index) {
         return arrayForContainer[index];
     }
+
+    public void addElementForIndex(int index, int element)
+    {
+        int[] longerArray = new int[arrayForContainer.length + 1];
+        for(int i = 0; i<longerArray.length - 1; i++)
+        {
+            if(i == index)
+            {
+                longerArray[i] = element;
+            }
+            else{
+                longerArray[i] = arrayForContainer[i];
+                containerSize++;
+            }
+
+        }
+        arrayForContainer = longerArray;
+    }
 }
