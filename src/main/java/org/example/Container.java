@@ -1,7 +1,7 @@
 package org.example;
 
 /** Класс Контейнер со свойствами <b>arrayForContainer</b> и <b>containerSize</b>.
- * @autor Анна Акулова
+ * @author Анна Акулова
  */
 public class Container {
     /** Поле массив для контейнера */
